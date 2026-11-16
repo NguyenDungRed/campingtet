@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kế Hoạch Camping Tết 2027 - Hoàn Chỉnh</title>
+<style>
+:root{--bg:#EDF0EA;--surface:#FFF;--surface-2:#E3E8DF;--fg:#17211C;--muted:#5B6A61;--line:#CFD8CD;--accent:#B4471F;--pine:#2C5648;--pine-soft:#DFEAE3;--warn:#8A5B12;--warn-soft:#F5EAD3;--radius:14px}
+@media (prefers-color-scheme:dark){
+:root{--bg:#0f1410;--surface:#1a1f1b;--surface-2:#222a24;--fg:#e8ede5;--muted:#8a9a8e;--line:#2d3831;--accent:#e67a52;--pine:#4a8b6f;--pine-soft:#1e2e26;--warn:#d4a356;--warn-soft:#2b2519}
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:system-ui,sans-serif;font-size:16px;line-height:1.6}
+.wrap{max-width:1400px;margin:0 auto;padding:28px 16px 72px}
+h1,h2,h3,h4{font-family:Georgia,serif;line-height:1.2}
+a{color:var(--accent);text-decoration:none}
+.hero{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:32px}
+.hero h1{font-size:clamp(1.9rem,5vw,3rem);font-weight:700;margin-bottom:14px}
+.hero .sub{color:var(--muted);margin-bottom:16px}
+.tabs{display:flex;gap:8px;border-bottom:2px solid var(--line);margin-bottom:24px;flex-wrap:wrap}
+.tabs button{font:inherit;font-size:.95rem;font-weight:600;cursor:pointer;background:transparent;color:var(--muted);border:0;padding:12px 20px;border-bottom:3px solid transparent}
+.tabs button.active{color:var(--pine);border-bottom-color:var(--pine)}
+.tab-content{display:none}
+.tab-content.active{display:block}
+.grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fill,minmax(360px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;cursor:pointer;position:relative;transition:transform .2s}
+.card:hover{transform:translateY(-4px)}
+.card-img{width:100%;height:220px;object-fit:cover;display:block}
+.card-body{padding:20px}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:999;padding:20px;overflow-y:auto}
+.modal.show{display:block}
+.modal-content{background:var(--surface);border-radius:var(--radius);max-width:1100px;margin:40px auto;position:relative}
+.modal-close{position:absolute;top:20px;right:20px;background:rgba(0,0,0,.7);border:0;border-radius:50%;width:42px;height:42px;cursor:pointer;font-size:1.5rem;color:white;z-index:10}
+.modal-body{padding:32px}
+.img-section{width:100%;height:auto;border-radius:10px;margin:16px 0;display:block;max-height:400px;object-fit:cover}
+.cost-table{background:var(--surface-2);border-radius:10px;padding:20px;margin:20px 0}
+.cost-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed var(--line)}
+.timeline{position:relative;padding-left:32px;margin:20px 0}
+.timeline-item{position:relative;padding-bottom:20px}
+.timeline-item::before{content:'';position:absolute;left:-32px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--pine);border:3px solid var(--surface)}
+.timeline-item::after{content:'';position:absolute;left:-26px;top:20px;bottom:0;width:2px;background:var(--line)}
+.timeline-item:last-child::after{display:none}
+.timeline-time{font-weight:700;color:var(--pine);margin-bottom:4px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:20px 0}
+.col-box{background:var(--surface-2);border-radius:10px;padding:18px}
+.map-embed{width:100%;height:350px;border:0;border-radius:10px;margin:20px 0}
+@media(max-width:768px){.grid{grid-template-columns:1fr}.two-col{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+<h1>Kế Hoạch Camping Tết Dương 2027</h1>
+<p class="sub">Nhóm 6 người, 3 xe máy. Click để xem chi tiết từng địa điểm.</p>
+</header>
+<nav class="tabs">
+<button class="active" data-tab="locations">📍 Địa Điểm (8)</button>
+<button data-tab="food">🍖 Thực Đơn</button>
+<button data-tab="rental">⛺ Thuê Đồ</button>
+</nav>
+<div class="tab-content active" id="tab-locations">
+<div class="grid" id="grid"></div>
+</div>
+<div class="tab-content" id="tab-food">
+<h2>Thực Đơn Chi Tiết 2 Ngày 1 Đêm</h2>
+<h3>Option A: BBQ Đầy Đủ (895k)</h3>
+<div class="cost-table">
+<h4>Tối ngày 1 (Thứ 6): BBQ</h4>
+<div class="cost-row"><span>Thịt ba chỉ 1.2kg (180k/kg)</span><span>216k</span></div>
+<div class="cost-row"><span>Thịt bò 0.8kg (210k/kg)</span><span>168k</span></div>
+<div class="cost-row"><span>Cánh gà 1kg (95k/kg)</span><span>95k</span></div>
+<div class="cost-row"><span>Rau củ 2kg + ngô 12 bắp</span><span>146k</span></div>
+<div class="cost-row"><span>Than 5kg + nước</span><span>200k</span></div>
+<div class="cost-row"><span><strong>Tổng</strong></span><span><strong>825k</strong></span></div>
+</div>
+<div class="cost-table">
+<h4>Sáng ngày 2 (Thứ 7): Bánh mì</h4>
+<div class="cost-row"><span>Bánh mì × 6 + trứng 12</span><span>138k</span></div>
+<div class="cost-row"><span>Cà phê/sữa</span><span>60k</span></div>
+</div>
+<div class="cost-table">
+<h4>Trưa ngày 2: Quán</h4>
+<div class="cost-row"><span>Cơm/phở × 6 (60k/người)</span><span>360k</span></div>
+</div>
+<p><strong>Tổng Option A:</strong> 1.383k (231k/người + 29k dự phòng = 260k/người)</p>
+<h3 style="margin-top:32px">Option B: Tiết Kiệm (698k)</h3>
+<div class="cost-table">
+<h4>Tối: Mì + Lẩu Đơn Giản</h4>
+<div class="cost-row"><span>Mì × 12 + xúc xích 1kg</span><span>150k</span></div>
+<div class="cost-row"><span>Rau + nấm</span><span>80k</span></div>
+<div class="cost-row"><span>Than + nước</span><span>150k</span></div>
+</div>
+<p><strong>Tổng Option B:</strong> 920k (153k/người + 20k dự phòng = 173k/người)</p>
+<h3 style="margin-top:32px">📝 Checklist Đi Chợ (Option A)</h3>
+<ul style="columns:2;column-gap:20px;padding-left:24px">
+<li>Thịt ba chỉ 1.2kg</li>
+<li>Thịt bò 0.8kg</li>
+<li>Cánh gà 1kg</li>
+<li>Rau củ 2kg</li>
+<li>Ngô 12 bắp</li>
+<li>Khoai 1.5kg</li>
+<li>Than hoa 5kg</li>
+<li>Trứng 12 quả</li>
+<li>Bánh mì 6 ổ</li>
+<li>Cà phê/sữa</li>
+<li>Nước đá 10kg</li>
+<li>Gia vị đầy đủ</li>
+<li>Giấy bạc, màng bọc</li>
+<li>Dầu ăn, nước mắm</li>
+</ul>
+</div>
+<div class="tab-content" id="tab-rental">
+<h2>Gói Thuê Đồ Cắm Trại</h2>
+<div class="cost-table">
+<h3>Phương án A: 2 Lều 3 Người (1.630k = 272k/người)</h3>
+<div class="cost-row"><span>Lều 3 người × 2</span><span>600k</span></div>
+<div class="cost-row"><span>Túi ngủ × 6</span><span>300k</span></div>
+<div class="cost-row"><span>Đệm hơi × 6</span><span>240k</span></div>
+<div class="cost-row"><span>Bếp + bàn + đèn</span><span>490k</span></div>
+</div>
+<div class="cost-table">
+<h3>Phương án B: 1 Lều 6 Người ⭐ KHUYẾN NGHỊ (1.430k = 238k/người)</h3>
+<div class="cost-row"><span>Lều 6 người × 1</span><span>400k</span></div>
+<div class="cost-row"><span>Túi ngủ × 6</span><span>300k</span></div>
+<div class="cost-row"><span>Đệm hơi × 6</span><span>240k</span></div>
+<div class="cost-row"><span>Bếp + bàn + đèn</span><span>490k</span></div>
+</div>
+<div style="background:var(--warn-soft);padding:20px;border-radius:10px;margin-top:20px">
+<h4>💡 Khuyến Nghị Chi Tiết</h4>
+<p><strong>Nên chọn Phương án B</strong> (1 lều 6 người) vì:</p>
+<ul style="margin-top:12px;padding-left:24px">
+<li><strong>Tiết kiệm:</strong> Rẻ hơn 34k/người (200k cho cả nhóm)</li>
+<li><strong>Thân thiết:</strong> Nhóm 6 người quen nhau, ngủ chung vui hơn</li>
+<li><strong>An toàn:</strong> Lần đầu camping nên ở gần nhau hỗ trợ</li>
+<li><strong>Ấm hơn:</strong> Tháng 1 lạnh, 6 người trong 1 lều ấm hơn 3 người</li>
+</ul>
+<p style="margin-top:12px"><strong>Chỉ chọn A</strong> nếu có cặp đôi cần riêng tư hoặc ai đó ngáy to.</p>
+</div>
+<h3 style="margin-top:32px">📞 3 Shop Thuê Đồ Hà Nội</h3>
+<div style="display:grid;gap:16px;margin-top:16px">
+<div style="background:var(--surface);border:1px solid var(--line);padding:18px;border-radius:10px">
+<h4>Lượn Store</h4>
+<p>📍 126 Ngõ 72 Nguyễn Trãi, Thanh Xuân</p>
+<p>📞 <a href="tel:0967123429">0967 123 429</a> | <a href="https://leutrai.com.vn" target="_blank">Website</a></p>
+</div>
+<div style="background:var(--surface);border:1px solid var(--line);padding:18px;border-radius:10px">
+<h4>WETREK.VN</h4>
+<p>📍 530 Láng, Đống Đa</p>
+<p>📞 <a href="tel:02873051988">028 7305 1988</a> | <a href="https://wetrek.vn" target="_blank">Website</a></p>
+</div>
+<div style="background:var(--surface);border:1px solid var(--line);padding:18px;border-radius:10px">
+<h4>Lều Phọt</h4>
+<p>📍 11 Phương Liệt, Thanh Xuân</p>
+<p>📞 <a href="tel:0918584528">0918 584 528</a> | <a href="https://leuphot.com" target="_blank">Website</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="modal" id="modal">
+<div class="modal-content">
+<button class="modal-close" onclick="closeModal()">&times;</button>
+<div class="modal-body" id="modalBody"></div>
+</div>
+</div>
+<script src="camping-data.js"></script>
+<script>
+document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));document.getElementById('tab-'+b.dataset.tab).classList.add('active')}));
+document.getElementById('grid').innerHTML=DATA.locations.map(loc=>`<div class="card" onclick="openModal(${loc.id})"><img class="card-img" src="${loc.images[0]}" alt="${loc.name}"><div class="card-body"><h3>${loc.name}</h3><p style="color:var(--muted);margin:12px 0">${loc.location} · ${loc.distance}km · ${loc.time}</p><div style="display:flex;gap:6px;flex-wrap:wrap">${loc.badges.map(b=>`<span style="font-size:.7rem;background:var(--pine-soft);color:var(--pine);padding:3px 8px;border-radius:6px">${b}</span>`).join('')}${loc.verified?'<span style="font-size:.7rem;background:var(--pine);color:white;padding:3px 8px;border-radius:6px">✓</span>':''}</div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px;text-align:center"><div><div style="font-size:.7rem;color:var(--muted)">CÁCH</div><div style="font-size:1.1rem;font-weight:700;color:var(--accent)">${loc.distance}km</div></div><div><div style="font-size:.7rem;color:var(--muted)">XE</div><div style="font-size:1.1rem;font-weight:700;color:var(--accent)">${loc.time}</div></div><div><div style="font-size:.7rem;color:var(--muted)">PHÍ</div><div style="font-size:1.1rem;font-weight:700;color:var(--accent)">${loc.cost.total}k</div></div></div></div></div>`).join('');
+function openModal(id){const loc=DATA.locations.find(l=>l.id===id);document.getElementById('modalBody').innerHTML=`<h2>${loc.name}</h2><p style="color:var(--muted);margin-bottom:24px">${loc.location} · ${loc.distance}km · ${loc.time}</p><img src="${loc.images[0]}" class="img-section"><div class="cost-table"><h3>Chi phí</h3><div class="cost-row"><span>Tổng/người</span><span>${loc.cost.total}k</span></div></div><img src="${loc.images[1]}" class="img-section"><h3 style="color:var(--pine);margin:32px 0 16px">⏰ Timeline</h3><div class="timeline">${loc.timeline.map(t=>`<div class="timeline-item"><div class="timeline-time">${t.time}</div><div style="color:var(--muted);font-size:.9rem">${t.desc}</div></div>`).join('')}</div><img src="${loc.images[2]}" class="img-section"><div class="two-col"><div class="col-box"><h4>✓ Ưu</h4><ul style="margin:0;padding:0 0 0 20px">${loc.pros.map(p=>`<li style="margin:6px 0">${p}</li>`).join('')}</ul></div><div class="col-box"><h4>⚠ Nhược</h4><ul style="margin:0;padding:0 0 0 20px">${loc.cons.map(c=>`<li style="margin:6px 0">${c}</li>`).join('')}</ul></div></div><h4 style="margin:20px 0 12px">💡 Lưu ý</h4><ul style="margin:0 0 16px 24px">${loc.tips.map(t=>`<li style="margin:8px 0">${t}</li>`).join('')}</ul><h4 style="margin:20px 0 12px">🗺️ Bản đồ</h4><iframe class="map-embed" src="https://www.google.com/maps?q=${loc.coords}&output=embed" loading="lazy"></iframe><h4 style="margin:20px 0 12px">📚 Review (${loc.reviews.length})</h4><div style="display:grid;gap:10px">${loc.reviews.map(r=>`<a href="${r.url}" target="_blank" style="background:var(--surface-2);border-radius:8px;padding:12px 16px;display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit"><div style="font-size:.75rem;font-weight:700;background:var(--pine);color:white;padding:4px 10px;border-radius:4px;min-width:90px;text-align:center">${r.platform}</div><div style="flex:1;font-size:.9rem">${r.title}</div></a>`).join('')}</div>`;document.getElementById('modal').classList.add('show');document.body.style.overflow='hidden'}
+function closeModal(){document.getElementById('modal').classList.remove('show');document.body.style.overflow=''}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+</script>
